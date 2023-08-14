@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1;100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hepta Slab", serif;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --dark-color: #0c0b0b;
+  --blue-color: #2138ccda;
+  --white-color: #e0e4f7;
+  --grey-color: rgba(192, 174, 254, 0.03);
+  --light-color: #b1bbf8da;
+}
+
+*:focus {
+  outline: none;
+}
+
+.mainpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark-color);
+}
+
+#light {
+  background-color: var(--white-color);
+}
+
+#dark {
+  background-color: var(--dark-color);
+}
+
+#light .question {
+  color: var(--dark-color);
+}
+
+#dark .question {
+  color: var(--white-color);
+}
+
+#light .answer {
+  color: var(--blue-color);
+}
+
+#dark .answer {
+  color: var(--white-color);
+}
+
+#light .one {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .one:hover {
+  background-color: var(--white-color);
+}
+
+#light .two {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .two:hover {
+  background-color: var(--white-color);
+}
+
+#light .three {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .three:hover {
+  background-color: var(--white-color);
+}
+
+#light .four {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .four:hover {
+  background-color: var(--white-color);
+}
+
+#light .five {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .five:hover {
+  background-color: var(--white-color);
+}
+
+#light .six {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .six:hover {
+  background-color: var(--white-color);
+}
+
+#light .seven {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .seven:hover {
+  background-color: var(--white-color);
+}
+
+#light .eight {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .eight:hover {
+  background-color: var(--white-color);
+}
+
+#light .nine {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .nine:hover {
+  background-color: var(--white-color);
+}
+
+#light .dot {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .dot:hover {
+  background-color: var(--white-color);
+}
+
+#light .zero {
+  background-color: var(--light-color);
+  color: var(--blue-color);
+}
+
+#light .zero:hover {
+  background-color: var(--white-color);
+}
+
+
+#light .time-n-date {
+  background-color: var(--light-color);
+}
+
+#light .mode {
+  background-color: var(--grey-color);
+}
+
+#light .hour {
+  color: var(--blue-color);
+}
+
+#light .mode {
+background-color: var(--light-color);}
+
+#light .date {
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+#light .clear:hover {
+background-color: var(--white-color);}
+
+#light .equal:hover {
+background-color: var(--light-color);}
+
+#light .fa-delete-left {
+color: rgb(247, 73, 73);
+}
+#light .fa-delete-left:hover {
+color: red}
+
+
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-items: left;
+  width: 50vw;
+  color: white;
+
+  .ansAndBck {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0 1.5rem 0;
+    gap: 10px;
+    /* justify-content: space-between; */
+    /* width: 24rem; */
+  }
+
+  .fa-delete-left {
+    cursor: pointer;
+  }
+  .fa-delete-left:hover {
+    transition: all ease-in-out 0.6s;
+    color: red;
+  }
+
+  .question {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background-color: transparent;
+    border: none;
+    width: 22rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--white-color);
+  }
+
+
+
+  .answer {
+    display: grid;
+    justify-content: center;
+    align-items: left;
+    background-color: transparent;
+    border: none;
+    width: 22rem;
+    font-size: 38px;
+    color: var(--white-color);
+    font-weight: 500;
+  }
+
+
+
+  .numOperation {
+    display: flex;
+  }
+
+  .math-operations {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: red;
+  }
+
+  .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: repeat(4, 5rem);
+    gap: 15px;
+    align-items: left;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight,
+  .nine,
+  .zero,
+  .dot {
+    border-radius: 100%;
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: grab;
+  }
+
+
+
+
+
+
+  .one:hover,
+  .two:hover,
+  .three:hover,
+  .four:hover,
+  .five:hover,
+  .six:hover,
+  .seven:hover,
+  .eight:hover,
+  .nine:hover,
+  .zero:hover,
+  .dot:hover {
+    transition: cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s;
+    background-color: var(--blue-color);
+    color: var(--dark-color);
+    font-weight: 500;
+  }
+
+  .clear {
+    border-radius: 100%;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-color: transparent;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: grab;
+  }
+
+  .clear:hover {
+    transition: ease-in-out 0.3s;
+    background-color: var(--dark-color);
+    color: var(--blue-color);
+  }
+
+  .operations {
+    display: grid;
+    margin-left: 15px;
+    grid-template-rows: repeat(4, 3.5rem);
+    grid-template-columns: 5rem;
+    gap: 34px;
+    padding-top: 10px;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .divide,
+  .multiply,
+  .add,
+  .subtract {
+    border-radius: 20px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: grab;
+    /* height: 50px; */
+  }
+
+  .multiply-img {
+    height: 100%;
+  }
+
+  .divide:hover,
+  .multiply:hover,
+  .add:hover,
+  .subtract:hover {
+    background-color: var(--grey-color);
+    color: var(--blue-color);
+    transition: ease-in-out 0.3s;
+  }
+
+  .equal {
+    border-radius: 20px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: grab;
+    height: 3.5rem;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .equal:hover {
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    transition: ease-in-out 0.3s;
+  }
+
+  .invalid-input {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: red;
+    align-items: left;
+    background-color: transparent;
+    border: none;
+    width: 22rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+}
+
+
+
+.clock {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  color: var(--white-color);
+  margin-bottom: -5rem;
+
+  .time-n-date {
+    background-color: var(--grey-color);
+    padding: 2.5rem 4rem;
+    border-radius: 50px;
+    margin-bottom: 1.2rem;
+  }
+
+  .time {
+    font-size: 50px;
+  }
+  .hour {
+    margin-bottom: -20px;
+  }
+  .minute {
+    color: var(--blue-color);
+  }
+
+  .date {
+    font-weight: 400;
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .mode {
+    border-radius: 100%;
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    border-color: transparent;
+    font-size: 11px;
+    font-weight: 400;
+    cursor: grab;
+    padding: 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mode:hover {
+    transition: all ease-in-out 0.6s;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+  }
+}
+
+.switch {
+  display: flex;
+  position: fixed;
+  /* height: 100%; */
+  /* background-color: purple; */
+  top: 10%;
+  right: 10%;
+}
+
+@media screen and (max-width: 425px) {
+#light .time-n-date{
+  background-color: transparent;
+}
+
+
+.switch {
+top: 96% ;
+right: 43%;
+  
+}
+
+  .calculator {
+    width: 100vw;
+    margin-bottom: -6em;
+  }
+  .clock {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+
+    .time-n-date {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+    }
+
+    .time {
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4px;
+    }
+
+    .hour {
+      margin: 0;
+      display: flex;
+    }
+
+    .date {
+      font-weight: 400;
+      width: 100%;
+      font-size: 8px;
+    }
+
+    .mode {
+      display: none;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 330px) {
+  .calculator {
+    .question {
+      font-size: 10px;
+      width: 20.5rem;
+    }
+
+    .answer {
+      width: 20.5rem;
+    }
+
+    .numbers {
+      gap: 10px;
+    }
+
+    .operations {
+      gap: 28px;
+      margin-left: 10px;
+      padding: 0;
+
+      .one,
+      .two,
+      .three,
+      .four,
+      .five,
+      .six,
+      .seven,
+      .eight,
+      .nine,
+      .zero,
+      .dot {
+        font-size: 12px;
+      }
+
+      .divide,
+      .multiply,
+      .add,
+      .subtract {
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+.clock {
+  background-color: linear-gradient(var(--grey-color), var(--dark-color));
+  border: none;
+}

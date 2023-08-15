@@ -434,7 +434,6 @@ color: red}
     align-items: center;
     justify-content: center;
   }
-
   .mode:hover {
     transition: all ease-in-out 0.6s;
     background-color: var(--white-color);
